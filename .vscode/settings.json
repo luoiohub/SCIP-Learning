@@ -1,0 +1,80 @@
+{
+    // UI
+    //"workbench.colorTheme": "Community Material Theme Palenight High Contrast", // 配色方案
+    //"workbench.iconTheme": "material-icon-theme", //启用vscode图标
+    "workbench.tree.renderIndentGuides": "always",
+    // 编辑器设置
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.fontFamily": "JetBrains Mono", // 字体
+    "debug.console.fontFamily": "Cascadia Code", //设置调试窗口字体
+    "terminal.integrated.fontFamily": "monospace", //设置显示控制台的字体
+    "editor.formatOnType": true,
+    "editor.lineHeight": 24, // 编辑器中的行高
+    "editor.fontSize": 14, // 编辑器中的字体大小
+    "terminal.integrated.fontSize": 18, //设置显示控制台的字体大小
+    "editor.fontWeight": "600",
+    "editor.fontLigatures": true, //设置能够显示连字
+    "editor.wordWrap": "off", // 自动换行
+    "editor.formatOnSave": false, //编辑器自动保存
+    "editor.renderIndentGuides": false,
+    "editor.bracketPairColorization.enabled": true,
+    "[FortranFixedForm]": {
+        "editor.rulers": [
+            {
+                "column": 72,
+                "color": "#E06C75"
+            },
+            {
+                "column": 6,
+                "color": "#E06C75"
+            }
+        ]
+    },
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#40f9ff"
+    },
+    "editor.smoothScrolling": true, // 滚动平滑，不过效果很微弱
+    "editor.cursorSmoothCaretAnimation": true, // 移动光标时变得平滑
+    "files.trimTrailingWhitespace": true, // 保存时，删除每一行末尾的空格
+    "files.insertFinalNewline": false, // 保存后文件最末尾加一整行空行，Linux下的习惯
+    "path-intellisense.autoSlashAfterDirectory": true,
+    "path-intellisense.extensionOnImport": true,
+    "explorer.confirmDelete": false,
+    "files.eol": "\n", // formatting only supports LF line endings
+    "files.autoGuessEncoding": true,
+    // git
+    "git.ignoreLegacyWarning": true,
+    "git.ignoreLimitWarning": true,
+    //Code Runer
+    "code-runner.runInTerminal": true, // 设置成false会在“输出”中输出，无法输入，且输出乱码
+    "code-runner.clearPreviousOutput": true, // 每次run code前清空属于code runner的终端消息，默认false
+    "code-runner.preserveFocus": false, // 若为false，run code后光标会聚焦到终端上。如果需要频繁输入数据可设为false
+    "code-runner.ignoreSelection": true, // 默认为false，效果是鼠标选中一块代码后可以单独执行
+    "code-runner.saveFileBeforeRun": true, // run code前保存
+    // Fortran
+    "fortran.provideCompletion": false,
+    "fortran.provideSymbols": false,
+    "fortran.provideHover": false,
+    "[fortran]": {
+        "editor.acceptSuggestionOnEnter": "off"
+    },
+    "[fortran_fixed-form]": {
+        "editor.acceptSuggestionOnEnter": "off"
+    },
+    "[FortranFreeForm]": {
+        "editor.acceptSuggestionOnEnter": "off"
+    },
+    "fortran-ls.executablePath": "/home/luoying/.local/bin/fortls",
+    "fortran.includePaths": [
+        "/usr/sbin/gfortran"
+    ],
+    "fortran.formatting.formatter": "fprettify",
+    "fortran.formatting.path": "/home/luoying/.local/bin/fprettify",
+    "fortran.formatting.findentArgs": "-Cn",
+    "fortran.formatting.fprettifyArgs": [
+        "--whitespace-comma",
+        "--enable-decl"
+    ],
+    "lowercase_intrinsics": false,
+    "debug_log": false
+}
